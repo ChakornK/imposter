@@ -20,3 +20,7 @@ html {
     @apply rounded-lg border border-gray-700 bg-gray-900 px-4 py-2 outline-none focus:border-blue-500;
   }
 }
+
+* {
+  scrollbar-width: thin;
+}

@@ -5,6 +5,8 @@ import { ref, useTemplateRef } from 'vue';
 import BottomSheet from '@/components/BottomSheet.vue';
 
 import { store } from '@/store';
+import { getCategories } from '@/lib/words';
+import { cva } from 'class-variance-authority';
 
 const newPlayerName = ref<string>('');
 
@@ -12,6 +14,37 @@ const nameInputRef = useTemplateRef('name-input');
 const addPlayerRef = useTemplateRef('add-player-button');
 
 const categoryPickerOpen = ref(false);
+const categories = getCategories();
+
+const categoryItemVariants = cva(
+  'flex items-center gap-3 rounded-lg border-2 p-3 transition-colors duration-100 text-left ease-out',
+  {
+    variants: {
+      selected: {
+        true: 'bg-blue-500/10 border-blue-500',
+        false: 'bg-gray-700 border-transparent',
+      },
+    },
+    defaultVariants: {
+      selected: false,
+    },
+  },
+);
+
+const checkboxVariants = cva(
+  'flex h-5 w-5 shrink-0 items-center justify-center rounded border transition-colors duration-100 ease-out',
+  {
+    variants: {
+      selected: {
+        true: 'bg-blue-500 border-blue-500 text-white',
+        false: 'border-gray-500',
+      },
+    },
+    defaultVariants: {
+      selected: false,
+    },
+  },
+);
 </script>
 
 <template>
@@ -63,7 +96,9 @@ const categoryPickerOpen = ref(false);
 
         <button class="flex items-center justify-between rounded-lg border border-gray-700 bg-gray-900 px-4 py-2"
           @click="() => categoryPickerOpen = true">
-          <p>Choose categories</p>
+          <p v-if="store.selectedCategories.length === 0">Choose categories</p>
+          <p v-else-if="store.selectedCategories.length === categories.length">All categories selected</p>
+          <p v-else>{{ store.selectedCategories.length }} categories selected</p>
           <HugeiconsIcon :icon="ArrowRight01Icon" size="20" />
         </button>
         <BottomSheet :open="categoryPickerOpen" :onClose="() => categoryPickerOpen = false">
@@ -75,13 +110,17 @@ const categoryPickerOpen = ref(false);
                 <HugeiconsIcon :icon="Cancel01Icon" size="20" />
               </button>
             </div>
-            <div class="flex grow flex-col items-stretch gap-2 overflow-scroll px-4 pb-4">
-              <button v-for="i in Array.from({ length: 100 }).map((_, i) => i)" :key="i"
-                class="flex gap-2 rounded-lg border border-gray-700 bg-gray-700 p-2">
-                <div>
-                  <HugeiconsIcon :icon="Tick02Icon" size="16" />
+            <div class="flex grow flex-col items-stretch gap-2 overflow-y-auto px-4 pb-4">
+              <button v-for="category in categories" :key="category.name"
+                :class="categoryItemVariants({ selected: store.selectedCategories.includes(category.name) })"
+                @click="store.toggleCategory(category.name)">
+                <div :class="checkboxVariants({ selected: store.selectedCategories.includes(category.name) })">
+                  <HugeiconsIcon v-if="store.selectedCategories.includes(category.name)" :icon="Tick02Icon" size="14" />
                 </div>
-                <p>{{ i }}</p>
+                <div class="flex grow flex-col">
+                  <span class="font-medium">{{ category.name }}</span>
+                  <span class="text-xs text-gray-400">{{ category.count }} words</span>
+                </div>
               </button>
             </div>
           </div>
