@@ -3,6 +3,7 @@ import { reactive } from "vue";
 export const store = reactive({
   players: [] as string[],
   selectedCategories: [] as string[],
+  view: "setup" as "setup" | "game",
 
   addPlayer(name: string) {
     const trimmedName = name.trim();

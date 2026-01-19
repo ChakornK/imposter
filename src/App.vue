@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { ref } from "vue"
 import GameView from "./views/GameView.vue"
 import SetupView from "./views/SetupView.vue"
-
-const pageIndex = ref(0)
+import { store } from "./store"
 </script>
 
 <template>
-  <SetupView v-if="pageIndex === 0" />
+  <SetupView v-if="store.view === 'setup'" />
   <GameView v-else />
 </template>
