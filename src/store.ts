@@ -1,9 +1,23 @@
 import { reactive } from "vue";
-import { getWords } from "@/lib/words";
+import { getCategories, getWords } from "@/lib/words";
+
+const STORAGE_KEY = "imposter-selected-categories";
+
+const getInitialCategories = () => {
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (saved) {
+    try {
+      return JSON.parse(saved);
+    } catch (e) {
+      console.error("Failed to parse saved categories", e);
+    }
+  }
+  return getCategories().map((c) => c.name);
+};
 
 export const store = reactive({
   players: [] as string[],
-  selectedCategories: [] as string[],
+  selectedCategories: getInitialCategories() as string[],
   view: "setup" as "setup" | "game" | "discuss" | "reveal",
   gameWord: null as string | null,
   gameHint: null as string | null,
@@ -27,6 +41,10 @@ export const store = reactive({
     } else {
       this.selectedCategories.splice(index, 1);
     }
+  },
+
+  saveCategories() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(this.selectedCategories));
   },
 
   startGame() {
