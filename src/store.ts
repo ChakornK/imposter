@@ -24,6 +24,7 @@ export const store = reactive({
   gameCategory: null as string | null,
   imposterIndex: null as number | null,
   startingPlayerIndex: null as number | null,
+  viewedPlayers: new Set<number>(),
 
   addPlayer(name: string) {
     const trimmedName = name.trim();
@@ -73,6 +74,7 @@ export const store = reactive({
     }
     this.imposterIndex = Math.floor(Math.random() * this.players.length);
     this.startingPlayerIndex = Math.floor(Math.random() * this.players.length);
+    this.viewedPlayers.clear();
     this.view = "game";
   },
 
@@ -90,6 +92,11 @@ export const store = reactive({
     this.gameCategory = null;
     this.imposterIndex = null;
     this.startingPlayerIndex = null;
+    this.viewedPlayers.clear();
     this.view = "setup";
+  },
+
+  markViewed(index: number) {
+    this.viewedPlayers.add(index);
   },
 });
