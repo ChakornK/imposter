@@ -24,7 +24,7 @@ const startingPlayer = store.players[store.startingPlayerIndex ?? 0];
         <h2 class="text-3xl font-black text-white">{{ startingPlayer }}</h2>
       </div>
 
-      <button class="btn mt-8 px-12 py-4" @click="store.resetGame()">Reveal imposter</button>
+      <button class="btn mt-8 px-12 py-4" @click="store.revealImposter()">Reveal imposter</button>
     </div>
   </div>
 </template>

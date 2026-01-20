@@ -4,7 +4,7 @@ import { getWords } from "@/lib/words";
 export const store = reactive({
   players: [] as string[],
   selectedCategories: [] as string[],
-  view: "setup" as "setup" | "game" | "discuss",
+  view: "setup" as "setup" | "game" | "discuss" | "reveal",
   gameWord: null as string | null,
   gameHint: null as string | null,
   imposterIndex: null as number | null,
@@ -58,6 +58,10 @@ export const store = reactive({
 
   startDiscussion() {
     this.view = "discuss";
+  },
+
+  revealImposter() {
+    this.view = "reveal";
   },
 
   resetGame() {
