@@ -4,10 +4,11 @@ import { getWords } from "@/lib/words";
 export const store = reactive({
   players: [] as string[],
   selectedCategories: [] as string[],
-  view: "setup" as "setup" | "game",
+  view: "setup" as "setup" | "game" | "discuss",
   gameWord: null as string | null,
   gameHint: null as string | null,
   imposterIndex: null as number | null,
+  startingPlayerIndex: null as number | null,
 
   addPlayer(name: string) {
     const trimmedName = name.trim();
@@ -51,13 +52,19 @@ export const store = reactive({
       this.gameHint = randomWordObj.hint;
     }
     this.imposterIndex = Math.floor(Math.random() * this.players.length);
+    this.startingPlayerIndex = Math.floor(Math.random() * this.players.length);
     this.view = "game";
+  },
+
+  startDiscussion() {
+    this.view = "discuss";
   },
 
   resetGame() {
     this.gameWord = null;
     this.gameHint = null;
     this.imposterIndex = null;
+    this.startingPlayerIndex = null;
     this.view = "setup";
   },
 });

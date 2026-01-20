@@ -16,8 +16,8 @@ const closeCard = () => {
 </script>
 
 <template>
-  <div class="flex h-full w-full flex-col p-4">
-    <div class="mx-auto flex w-full max-w-xl flex-col gap-4">
+  <div class="flex h-full w-full flex-col items-stretch">
+    <div class="*:max-w-xl *:mx-auto *:w-full flex grow flex-col gap-4 overflow-auto p-4">
       <div class="flex flex-col items-stretch gap-2">
         <h1 class="text-3xl font-bold">View your word</h1>
         <p>Tap on the card with your name.</p>
@@ -37,6 +37,12 @@ const closeCard = () => {
 
       <div v-if="store.players.length === 0" class="flex flex-col items-center justify-center py-20 text-gray-500">
         <p>No players added.</p>
+      </div>
+    </div>
+
+    <div class="h-20 shrink-0 border-t border-gray-700">
+      <div class="mx-auto flex h-full max-w-xl items-center p-4">
+        <button class="btn h-full w-full" @click="store.startDiscussion()">Continue</button>
       </div>
     </div>
 
