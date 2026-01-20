@@ -775,6 +775,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/web-bluetooth@npm:^0.0.21":
+  version: 0.0.21
+  resolution: "@types/web-bluetooth@npm:0.0.21"
+  checksum: 10c0/5f47c5ec452ca31e6a9b44c8aaa54b66c4f57d4aca00166c45902a3883139580e14b254b774172ff982ba4458cc444b5aa59bb4573c2fd34562cfa599721f8e4
+  languageName: node
+  linkType: hard
+
 "@vitejs/plugin-vue@npm:^6.0.3":
   version: 6.0.3
   resolution: "@vitejs/plugin-vue@npm:6.0.3"
@@ -941,6 +948,35 @@ __metadata:
     vue:
       optional: true
   checksum: 10c0/f4e37182dc2560ce2c78e66fbf837000dba5460c12913ef37f5d54b6c0da518df1118fcc1968ff51d9541287a9d9d105fb17072b0dbb095919cfb50d1fe67a78
+  languageName: node
+  linkType: hard
+
+"@vueuse/core@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/core@npm:14.1.0"
+  dependencies:
+    "@types/web-bluetooth": "npm:^0.0.21"
+    "@vueuse/metadata": "npm:14.1.0"
+    "@vueuse/shared": "npm:14.1.0"
+  peerDependencies:
+    vue: ^3.5.0
+  checksum: 10c0/e1ed368c832f2836ae62f3969cd46691fcef40a34a3909898012e6143395cb8e31d9ebb6ccfd9b0b9fb7493b073282ce226e4fb62ab84fc2f9557d59f232b6f0
+  languageName: node
+  linkType: hard
+
+"@vueuse/metadata@npm:14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/metadata@npm:14.1.0"
+  checksum: 10c0/983296b13dc979e8a18831315631e0d08934e655edd0d12073c06512228a5a5140af0671eb28b20068ef42c55312a58287a7d51314427d2edcbbf0c38f5994c8
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/shared@npm:14.1.0"
+  peerDependencies:
+    vue: ^3.5.0
+  checksum: 10c0/642ca681ffea7bf24de970bed6580fafc01bd66a4a185f8eb05ddc2450265f1ede86b79b2d8660d22d39ec3f498658f9fedadf2606dfd94d730d443bb0b10f2a
   languageName: node
   linkType: hard
 
@@ -1213,6 +1249,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framer-motion@npm:^12.25.0":
+  version: 12.27.1
+  resolution: "framer-motion@npm:12.27.1"
+  dependencies:
+    motion-dom: "npm:^12.27.1"
+    motion-utils: "npm:^12.24.10"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/b0f9ad6e75188afb25ebc87d0452966117cfa531f00f40eee3296218efca65fed55dc63a3148b7d2fabc46200db488ddfd251fabff37cf7969025bc9b84226ad
+  languageName: node
+  linkType: hard
+
 "fs-minipass@npm:^3.0.0":
   version: 3.0.3
   resolution: "fs-minipass@npm:3.0.3"
@@ -1256,6 +1314,13 @@ __metadata:
   version: 4.2.11
   resolution: "graceful-fs@npm:4.2.11"
   checksum: 10c0/386d011a553e02bc594ac2ca0bd6d9e4c22d7fa8cfbfc448a6d148c59ea881b092db9dbe3547ae4b88e55f1b01f7c4a2ecc53b310c042793e63aa44cf6c257f2
+  languageName: node
+  linkType: hard
+
+"hey-listen@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "hey-listen@npm:1.0.8"
+  checksum: 10c0/38db3028b4756f3d536c0f6a92da53bad577ab649b06dddfd0a4d953f9a46bbc6a7f693c8c5b466a538d6d23dbc469260c848427f0de14198a2bbecbac37b39e
   languageName: node
   linkType: hard
 
@@ -1307,7 +1372,9 @@ __metadata:
     "@types/node": "npm:^24.10.4"
     "@vitejs/plugin-vue": "npm:^6.0.3"
     "@vue/tsconfig": "npm:^0.8.1"
+    "@vueuse/core": "npm:^14.1.0"
     class-variance-authority: "npm:^0.7.1"
+    motion-v: "npm:^1.9.0"
     npm-run-all2: "npm:^8.0.4"
     prettier: "npm:3.7.4"
     tailwindcss: "npm:^4.1.18"
@@ -1617,6 +1684,36 @@ __metadata:
   dependencies:
     minipass: "npm:^7.1.2"
   checksum: 10c0/5aad75ab0090b8266069c9aabe582c021ae53eb33c6c691054a13a45db3b4f91a7fb1bd79151e6b4e9e9a86727b522527c0a06ec7d45206b745d54cd3097bcec
+  languageName: node
+  linkType: hard
+
+"motion-dom@npm:^12.23.23, motion-dom@npm:^12.27.1":
+  version: 12.27.1
+  resolution: "motion-dom@npm:12.27.1"
+  dependencies:
+    motion-utils: "npm:^12.24.10"
+  checksum: 10c0/a7a856f2aedd7e8509177410e2c84936640dc77225066310c4ce41d4147407d3782125d556461abcca3c6c03b52095ee4fb12cf4277894221875c34dfae943b4
+  languageName: node
+  linkType: hard
+
+"motion-utils@npm:^12.24.10":
+  version: 12.24.10
+  resolution: "motion-utils@npm:12.24.10"
+  checksum: 10c0/b73e2e414480b0b162a5cbc9195856d113b5e7c23a055b1613143176694fdfabe87a6a41c3c2f205549e368ca541b609455344bd774d7d836f09a551562042e2
+  languageName: node
+  linkType: hard
+
+"motion-v@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "motion-v@npm:1.9.0"
+  dependencies:
+    framer-motion: "npm:^12.25.0"
+    hey-listen: "npm:^1.0.8"
+    motion-dom: "npm:^12.23.23"
+  peerDependencies:
+    "@vueuse/core": ">=10.0.0"
+    vue: ">=3.0.0"
+  checksum: 10c0/797184a1c86f18969af45a8cca9689de3a37cfb8dd0467200a3f2fd1c725da3e6df54c63345be242f42c9bd0a8f005dde7c8989517ec5bb11e1bf47155f4f34c
   languageName: node
   linkType: hard
 

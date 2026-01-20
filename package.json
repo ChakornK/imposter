@@ -18,7 +18,9 @@
     "@hugeicons/core-free-icons": "^3.1.1",
     "@hugeicons/vue": "^1.0.4",
     "@tailwindcss/vite": "^4.1.18",
+    "@vueuse/core": "^14.1.0",
     "class-variance-authority": "^0.7.1",
+    "motion-v": "^1.9.0",
     "tailwindcss": "^4.1.18",
     "vue": "^3.5.26"
   },
