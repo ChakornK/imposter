@@ -29,7 +29,7 @@ const sheetVariants: Record<string, VariantType> = {
       <motion.div v-if="open" class="fixed inset-0 bg-black/50" @click="onClose" :variants="overlayVariants"
         initial="hidden" animate="visible" exit="hidden"></motion.div>
       <motion.div v-if="open"
-        class="fixed bottom-0 left-1/2 top-8 w-full max-w-xl -translate-x-1/2 rounded-t-xl bg-gray-800 text-white shadow-lg"
+        class="border-b-128 fixed bottom-0 left-1/2 top-8 -mb-32 w-full max-w-xl -translate-x-1/2 rounded-t-xl border-gray-800 bg-gray-800 text-white shadow-lg"
         :variants="sheetVariants" initial="hidden" animate="visible" exit="hidden">
         <slot></slot>
       </motion.div>
