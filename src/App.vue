@@ -2,7 +2,13 @@
 import GameView from "./views/GameView.vue"
 import SetupView from "./views/SetupView.vue"
 import { store } from "./store"
-import { onMounted, onUnmounted } from "vue"
+import { onMounted, onUnmounted, watch } from "vue"
+
+watch(() => store.view, (newView) => {
+  if (newView === 'game') {
+    history.pushState({ view: 'game' }, '');
+  }
+});
 
 const handlePopState = () => {
   if (store.view === 'game') {
