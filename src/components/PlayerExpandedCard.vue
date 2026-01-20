@@ -33,8 +33,7 @@ const flipCard = () => {
     <AnimatePresence>
       <div v-if="isOpen" class="fixed inset-0 z-50 flex items-center justify-center p-6">
         <motion.div :initial="{ opacity: 0 }" :animate="{ opacity: 1 }" :exit="{ opacity: 0 }"
-          :transition="{ duration: 0.1, ease: 'backInOut' }" class="absolute inset-0 bg-black/50"
-          @click="emit('close')" />
+          :transition="{ duration: 0.2 }" class="absolute inset-0 bg-black/50" @click="emit('close')" />
 
         <div class="aspect-3/4 relative w-full max-w-sm" style="perspective: 1000px; transform-style: preserve-3d"
           @click="flipCard">
