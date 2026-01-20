@@ -40,7 +40,7 @@ const flipCard = () => {
 
           <motion.div :layoutId="layoutId"
             class="*:absolute *:backface-hidden *:inset-0 *:flex *:flex-col *:items-center *:justify-center *:p-8 relative h-full w-full rounded-2xl border-2 border-gray-700 bg-gray-800"
-            :animate="{ rotateY: isFlipped ? 180 : 0 }" :transition="{ duration: 0.2, ease: 'circOut' }"
+            :animate="{ rotateY: isFlipped ? 180 : 0 }" :transition="{ duration: 0.3, ease: 'circOut' }"
             style="transform-style: preserve-3d">
 
             <div class="rotate-y-0">
