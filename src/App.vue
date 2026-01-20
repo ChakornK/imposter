@@ -12,7 +12,7 @@ watch(() => store.view, (newView) => {
 
 const handlePopState = () => {
   if (store.view === 'game') {
-    store.view = 'setup';
+    store.resetGame();
   }
 };
 

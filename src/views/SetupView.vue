@@ -131,7 +131,7 @@ const checkboxVariants = cva(
 
     <div class="h-20 shrink-0 border-t border-gray-700">
       <div class="mx-auto flex h-full max-w-xl items-center p-4">
-        <button class="btn h-full w-full" @click="store.view = 'game'">Start</button>
+        <button class="btn h-full w-full" @click="store.startGame()">Start</button>
       </div>
     </div>
   </div>
