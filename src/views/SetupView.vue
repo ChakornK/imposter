@@ -49,9 +49,11 @@ const checkboxVariants = cva(
 
 <template>
   <div class="flex h-full w-full flex-col items-stretch">
-    <div class="*:max-w-xl *:mx-auto *:w-full flex grow flex-col gap-2 overflow-auto p-4">
-      <h1 class="text-3xl font-bold">Imposter</h1>
-      <p>All but one person knows the word. Everyone gives 1-word clues and tries to find who the imposter is.</p>
+    <div class="*:max-w-xl *:mx-auto *:w-full flex grow flex-col gap-4 overflow-auto p-4">
+      <div class="flex flex-col items-stretch gap-2">
+        <h1 class="text-3xl font-bold">Imposter</h1>
+        <p>All but one person knows the word. Everyone gives 1-word clues and tries to find who the imposter is.</p>
+      </div>
 
       <div class="flex flex-col gap-2 rounded-lg border border-gray-700 bg-gray-800 p-4">
         <div class="flex items-center gap-2 px-1">

@@ -17,9 +17,10 @@ const closeCard = () => {
 
 <template>
   <div class="flex h-full w-full flex-col p-4">
-    <div class="mx-auto flex w-full max-w-xl flex-col gap-6">
-      <div class="flex items-center justify-between">
-        <h1 class="text-3xl font-bold">Game Started</h1>
+    <div class="mx-auto flex w-full max-w-xl flex-col gap-4">
+      <div class="flex flex-col items-stretch gap-2">
+        <h1 class="text-3xl font-bold">View your word</h1>
+        <p>Tap on the card with your name.</p>
       </div>
 
       <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
