@@ -1,3 +1,423 @@
 Objects:
-  Example word: Test hint
-  Another word: Another hint
+  Table: Flat
+  Chair: Supportive
+  Lamp: Luminous
+  Clock: Cyclic
+  Pencil: Fragile
+  Pen: Permanent
+  Eraser: Fading
+  Notebook: Layered
+  Book: Dense
+  Backpack: Portable
+  Bottle: Sealed
+  Mug: Steady
+  Plate: Broad
+  Bowl: Curved
+  Spoon: Shallow
+  Fork: Split
+  Knife: Narrow
+  Scissors: Paired
+  Tape: Sticky
+  Glue: Binding
+  Ruler: Straight
+  Calculator: Exact
+  Phone: Connected
+  Charger: Dependent
+  Keyboard: Gridded
+  Mouse: Clicky
+  Monitor: Bright
+  Headphones: Isolating
+  Speaker: Loud
+  Camera: Framed
+  Tripod: Stable
+  Watch: Worn
+  Wallet: Folded
+  Keys: Metallic
+  Door: Hinged
+  Window: Transparent
+  Mirror: Reflective
+  Pillow: Compressed
+  Blanket: Layered
+  Bed: Grounded
+  Couch: Cushioned
+  Remote: Distant
+  Fan: Spinning
+  Heater: Dry
+  Candle: Melting
+  Flashlight: Focused
+  Battery: Stored
+  Umbrella: Foldable
+  Sunglasses: Tinted
+  Hat: Crowned
+  Jacket: Insulated
+  Shoes: Paired
+  Belt: Looping
+  Bag: Flexible
+  Box: Rigid
+  Basket: Open
+  Broom: Bristled
+  Brush: Textured
+  Comb: Toothed
+  Towel: Absorbent
+  Soap: Slippery
+  Toothbrush: Bristly
+  Sink: Sunken
+  Faucet: Dripping
+  Alarm: Sudden
+  Calendar: Sequential
+  Stapler: Clamping
+  Paperclip: Bent
+  Binder: Thick
+  Folder: Layered
+  Envelope: Sealed
+  Letter: Written
+  Stamp: Sticky
+  Clipboard: Firm
+  Whiteboard: Clean
+  Marker: Inky
+  Highlighter: Bright
+  Chalk: Dusty
+  Blackboard: Dark
+  Desk: Sturdy
+  Shelf: Stacked
+  Cabinet: Hidden
+  Drawer: Sliding
+  Handle: Gripped
+  Knob: Rounded
+  Switch: Toggled
+  Button: Pressed
+  Rope: Twisted
+  Chain: Linked
+  Lock: Secure
+  Safe: Heavy
+  Keycard: Coded
+  Lanyard: Hanging
+  Tag: Labeled
+  Label: Sticky
+  Sticker: Peeled
+  Tape Measure: Retractable
+  Level: Balanced
+  Hammer: Impact
+  Nail: Pointed
+  Screw: Threaded
+  Wrench: Adjustable
+  Saw: Toothed
+  Drill: Spinning
+  Ladder: Stepped
+  Bucket: Carried
+  Mop: Soaked
+  Sponge: Porous
+  Vacuum: Loud
+  Trash Can: Open
+  Lid: Covered
+  Recycling Bin: Sorted
+  Shovel: Scooped
+  Hose: Flexible
+  Sprinkler: Spraying
+  Faucet Handle: Turned
+  Pipe: Hollow
+  Thermometer: Sensitive
+  Scale: Balanced
+  Stopwatch: Timed
+  Timer: Delayed
+  Alarm Clock: Jarring
+  Hourglass: Flowing
+  Planner: Structured
+  Flash Drive: Compact
+  Hard Drive: Stored
+  Cable: Tangled
+  Adapter: Converted
+  Extension Cord: Long
+  Antenna: Extended
+  Remote Control: Clicked
+  Game Controller: Gripped
+  Game Console: Central
+  Game Cartridge: Inserted
+  Disc: Shiny
+  DVD Player: Aging
+  TV Stand: Low
+  Television: Glowing
+  Blinds: Slatted
+  Shade: Lowered
+  Bulb: Fragile
+  Socket: Fitted
+  Vent: Slotted
+  Blanket Fort: Stacked
+  Mattress: Thick
+  Bed Frame: Raised
+  Washing Machine: Spinning
+  Dryer: Warm
+  Needle: Sharp
+  Thread: Thin
+  Zipper: Toothed
+  Velcro: Grippy
+  Backpack Strap: Adjustable
+  Suitcase: Wheeled
+  Lantern: Portable
+  Matchstick: Brittle
+  Lighter: Flicked
+  Fire Extinguisher: Pressurized
+  Smoke Detector: Beeping
+  Bandage: Sticky
+  Thermos: Insulated
+  Rolling Pin: Cylindrical
+  Oven Mitt: Padded
+  Toaster: Slotted
+  Kettle: Whistling
+  Teaspoon: Small
+  Trash Bag: Thin
+  Ice Pack: Frozen
+  Picture: Proof
+  Coin: Mint
+  Bill: Fold
+  Floor: Base
+  Wall: Boundary
+  Ceiling: Limit
+  Brick: Weight
+  Toothpaste: Mint
+  Shower: Steam
+  Curtain: Reveal
+  Carpet: Muffle
+  Air Conditioner: Chill
+  Outlet: Grid
+  Radio: Signal
+  Microphone: Leak
+  Lens: Focus
+  Cap: Brim
+  Glove: Grip
+  Scarf: Wrap
+  Glasses: Frame
+  Paper: Fiber
+  Bookmark: Place
+  Paper Clip: Temporary
+  Sharpener: Shave
+  Crayon: Wax
+  Closet: Clothes
+  Rail: Guide
+  Fence: Line
+  Mailbox: Wait
+  ID Card: Photo
+  Jar: Seal
+  Can: Soda
+  Oven: Chamber
+  Stove: Flame
+  Straw: Hollow
+  Stool: Short
+  Toilet Paper: Ply
+  Sandpaper: Grit
+  Paint Brush: Stroke
+  Smoke Alarm: Chirp
+  Flashcard: Prompt
+  Staple: Hold
+  Laptop: Portable
+  iPad: Touch
+  USB: Port
+  Doorstop: Wedge
+  Flower Pot: Clay
+  Pendulum: Swing
+  Sundial: Shadow
+  Whistle: Shrill
+  Bell: Chime
+  Metronome: Pace
+  Turntable: Spin
+  Gamepad: Input
+  Spring: Coil
+  Dumbbell: Pair
+  Raincoat: Shell
+  Boot: Tread
+  Keyhole: Slot
+  Peephole: Fisheye
+
+Countries:
+  Canada: Maple
+  Brazil: Canopy
+  Japan: Neon
+  Germany: Precision
+  France: Velvet
+  Italy: Marble
+  Spain: Siesta
+  Portugal: Azulejo
+  Norway: Fjord
+  Sweden: Minimal
+  Finland: Silence
+  Iceland: Steam
+  Ireland: Moss
+  Scotland: Tartan
+  England: Queue
+  Netherlands: Polder
+  Belgium: Drizzle
+  Switzerland: Neutral
+  Austria: Waltz
+  Poland: Amber
+  Greece: Column
+  Turkey: Bridge
+  Egypt: Papyrus
+  Morocco: Mosaic
+  Tunisia: Souk
+  Nigeria: Pulse
+  Ghana: Gold
+  Kenya: Rift
+  Ethiopia: Origin
+  South Africa: Spectrum
+  India: Monsoon
+  Pakistan: Indus
+  Nepal: Ascent
+  Bhutan: Balance
+  Thailand: Spice
+  Vietnam: Steam
+  Indonesia: Archipelago
+  Philippines: Current
+  China: Dynasty
+  Mongolia: Horizon
+  South Korea: Bandwidth
+  North Korea: Static
+  Australia: Outback
+  New Zealand: Fern
+  Mexico: Lucha
+  Peru: Terrace
+  Chile: Ribbon
+  Argentina: Tango
+  Colombia: Altitude
+
+Food:
+  Bread: Crumb
+  Butter: Softened
+  Cheese: Aged
+  Milk: Pale
+  Yogurt: Cultured
+  Cream: Whipped
+  Egg: Oval
+  Omelette: Folded
+  Pancake: Stacked
+  Waffle: Grid
+  Cereal: Morning
+  Oatmeal: Steady
+  Rice: Steamed
+  Pasta: Twisted
+  Noodles: Slippery
+  Pizza: Sliced
+  Sandwich: Layered
+  Burger: Pressed
+  Fries: Golden
+  Soup: Simmered
+  Stew: Patient
+  Salad: Tossed
+  Lettuce: Crisp
+  Spinach: Leafy
+  Kale: Tough
+  Tomato: Juicy
+  Potato: Grounded
+  Carrot: Tapered
+  Onion: Layered
+  Garlic: Pungent
+  Pepper: Sharp
+  Chili: Heated
+  Corn: Kernel
+  Peas: Clustered
+  Beans: Shelled
+  Tofu: Quiet
+  Mushroom: Earthy
+  Apple: Polished
+  Banana: Curved
+  Orange: Segmented
+  Lemon: Zest
+  Lime: Bright
+  Grape: Bunch
+  Strawberry: Dotted
+  Blueberry: Bursting
+  Raspberry: Hollow
+  Cherry: Stemmed
+  Peach: Fuzzy
+  Plum: Dark
+  Pear: Tapered
+  Mango: Yellow
+  Pineapple: Spiked
+  Coconut: Hard
+  Watermelon: Massive
+  Cantaloupe: Netted
+  Raisin: Shrunken
+  Almond: Smooth
+  Croissant: Flaky
+  Bagel: Ringed
+  Muffin: Domed
+  Cupcake: Iced
+  Cake: Layered
+  Brownie: Dense
+  Cookie: Dotted
+  Biscuit: Crumbly
+  Cracker: Snapped
+  Pie: Filled
+  Donut: Glazed
+  Pretzel: Twisted
+  Chocolate: Melted
+  Candy: Bright
+  Caramel: Burned
+  Marshmallow: Puffy
+  Ice Cream: Frozen
+  Jam: Spread
+  Honey: Viscous
+  Syrup: Slow
+  Ketchup: Red
+  Mustard: Sharp
+  Mayonnaise: Emulsified
+  Vinegar: Acidic
+  Oil: Slick
+  Buttercream: Sweetened
+  Salt: Granular
+  Sugar: Crystalline
+  Ginger: Knotted
+  Mint: Cooling
+  Sausage: Cased
+  Chicken: Fried
+  Fish: Filleted
+  Crab: Shelled
+  Sushi: Precise
+  Ramen: Brothy
+  Taco: Folded
+  Lasagna: Stacked
+  Spaghetti: Long
+  Kimchi: Fermented
+  Hot Dog: Linked
+  Smoothie: Blended
+  Milkshake: Thick
+  Coffee: Bitter
+  Matcha: Whisked
+
+Professions:
+  Teacher: Chalk
+  Doctor: White
+  Nurse: Shift
+  Student: Notes
+  Principal: Office
+  Professor: Lecture
+  Engineer: Build
+  Programmer: Logic
+  Electrician: Wire
+  Plumber: Leak
+  Mechanic: Wrench
+  Carpenter: Wood
+  Construction Worker: Site
+  Accountant: Numbers
+  Lawyer: Case
+  Police Officer: Badge
+  Security Guard: Patrol
+  Firefighter: Alarm
+  Paramedic: Siren
+  Chef: Heat
+  Waiter: Order
+  Barista: Steam
+  Dishwasher: Rinse
+  Taxi Driver: Meter
+  Truck Driver: Miles
+  Pilot: Cabin
+  Farmer: Field
+  Janitor: Mop
+  Reporter: Scene
+  Photographer: Shot
+  Videographer: Cut
+  Actor: Script
+  Singer: Mic
+  Referee: Whistle
+  Influencer: Feed
+  YouTuber: Upload
+  Call Center Agent: Headset
