@@ -23,8 +23,8 @@ const isWordRevealed = ref(false);
 
       <div class="perspective-distant aspect-2/1 w-full max-w-sm cursor-pointer"
         @click="isWordRevealed = !isWordRevealed">
-        <motion.div class="relative h-full w-full" :animate="{ rotateX: isWordRevealed ? 180 : 0 }"
-          :transition="{ duration: 0.3, ease: 'circOut' }" style="transform-style: preserve-3d">
+        <motion.div class="transform-3d relative h-full w-full" :animate="{ rotateX: isWordRevealed ? 180 : 0 }"
+          :transition="{ duration: 0.3, ease: 'circOut' }">
           <div
             class="backface-hidden absolute inset-0 flex flex-col items-center justify-center gap-2 rounded-3xl border-2 border-blue-500/30 bg-blue-500/10 p-8 text-center"
             style="backface-visibility: hidden;">

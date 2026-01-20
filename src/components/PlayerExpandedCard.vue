@@ -36,13 +36,11 @@ const flipCard = () => {
         <motion.div :initial="{ opacity: 0 }" :animate="{ opacity: 1 }" :exit="{ opacity: 0 }"
           :transition="{ duration: 0.2 }" class="absolute inset-0 bg-black/50" @click="emit('close')" />
 
-        <div class="aspect-3/4 relative w-full max-w-sm" style="perspective: 1000px; transform-style: preserve-3d"
-          @click="flipCard">
+        <div class="aspect-3/4 perspective-distant transform-3d relative w-full max-w-sm" @click="flipCard">
 
           <motion.div :layoutId="layoutId"
-            class="*:absolute *:backface-hidden *:inset-0 *:flex *:flex-col *:items-center *:justify-center *:p-8 relative h-full w-full rounded-2xl border-2 border-gray-700 bg-gray-800"
-            :animate="{ rotateY: isFlipped ? 180 : 0 }" :transition="{ duration: 0.3, ease: 'circOut' }"
-            style="transform-style: preserve-3d">
+            class="*:absolute *:backface-hidden *:inset-0 *:flex *:flex-col *:items-center *:justify-center *:p-8 transform-3d relative h-full w-full rounded-2xl border-2 border-gray-700 bg-gray-800"
+            :animate="{ rotateY: isFlipped ? 180 : 0 }" :transition="{ duration: 0.3, ease: 'circOut' }">
 
             <div class="rotate-y-0">
               <div class="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-gray-700">
