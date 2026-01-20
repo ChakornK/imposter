@@ -48,6 +48,6 @@ const closeCard = () => {
 
     <PlayerExpandedCard v-for="(player, index) in store.players" :key="index" :player="player || ''"
       :isOpen="selectedPlayerIndex === index" :layoutId="`card-${index}`" :isImposter="index === store.imposterIndex"
-      :word="store.gameWord" :hint="store.gameHint" @close="closeCard" />
+      :word="store.gameWord" :hint="store.gameHint" :category="store.gameCategory" @close="closeCard" />
   </div>
 </template>

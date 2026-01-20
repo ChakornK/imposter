@@ -11,6 +11,7 @@ const props = defineProps<{
   isImposter: boolean;
   word: string | null;
   hint: string | null;
+  category: string | null;
 }>();
 
 const emit = defineEmits<{
@@ -60,9 +61,15 @@ const flipCard = () => {
                   <h3 class="text-2xl font-black text-red-500">You are the</h3>
                   <h3 class="text-4xl font-black text-red-600">imposter</h3>
                 </div>
-                <div v-if="hint" class="mt-4 w-full rounded-xl border border-gray-600 bg-gray-700/50 p-4">
-                  <p class="mb-1 text-sm font-bold uppercase text-gray-400">Hint</p>
-                  <p class="text-xl font-bold">{{ hint }}</p>
+                <div class="mt-4 flex w-full flex-col gap-2 rounded-xl border border-gray-600 bg-gray-700/50 p-4">
+                  <div>
+                    <p class="mb-1 text-sm font-bold uppercase text-gray-400">Category</p>
+                    <p class="text-lg font-bold">{{ category }}</p>
+                  </div>
+                  <div v-if="hint" class="border-t border-gray-600 pt-2">
+                    <p class="mb-1 text-sm font-bold uppercase text-gray-400">Hint</p>
+                    <p class="text-xl font-bold italic">"{{ hint }}"</p>
+                  </div>
                 </div>
               </div>
               <div v-else class="flex flex-col items-center gap-4 text-center">

@@ -21,6 +21,7 @@ export const store = reactive({
   view: "setup" as "setup" | "game" | "discuss" | "reveal",
   gameWord: null as string | null,
   gameHint: null as string | null,
+  gameCategory: null as string | null,
   imposterIndex: null as number | null,
   startingPlayerIndex: null as number | null,
 
@@ -68,6 +69,7 @@ export const store = reactive({
     if (randomWordObj) {
       this.gameWord = randomWordObj.word;
       this.gameHint = randomWordObj.hint;
+      this.gameCategory = randomWordObj.category;
     }
     this.imposterIndex = Math.floor(Math.random() * this.players.length);
     this.startingPlayerIndex = Math.floor(Math.random() * this.players.length);
@@ -85,6 +87,7 @@ export const store = reactive({
   resetGame() {
     this.gameWord = null;
     this.gameHint = null;
+    this.gameCategory = null;
     this.imposterIndex = null;
     this.startingPlayerIndex = null;
     this.view = "setup";
